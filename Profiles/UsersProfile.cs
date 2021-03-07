@@ -10,6 +10,8 @@ namespace AspNetCoreWebApiIntro.Profiles
         public UsersProfile()
         {
             CreateMap<User, UserReadDto>();
+            CreateMap<User, UserUpdateDto>();
+            CreateMap<UserUpdateDto, User>();
         }
     }
 }

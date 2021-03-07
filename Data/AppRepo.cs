@@ -33,5 +33,10 @@ namespace AspNetCoreWebApiIntro.Data
         {
             this._context.Users.Add(user);
         }
+
+        public void DeleteUser(User user)
+        {
+            this._context.Users.Remove(user);
+        }
     }
 }
